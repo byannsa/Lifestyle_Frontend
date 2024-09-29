@@ -41,12 +41,21 @@ section {
   font-weight: bold;
 }
 
+.header .logo:hover{
+  color: #0cdf05;
+  transition: color 0.3s;
+}
+
 .header .menu{
   display: flex;
   gap: 40px;
   flex-grow: 1;
   justify-content: center;
   margin: 0;
+}
+
+.header .menu .dropdown-menu {
+  background: rgb(0, 0, 0);
 }
 
 .header .menu a{
@@ -69,7 +78,7 @@ align-items: center;
 padding: 12px;
 border-radius: 30px;
 background: #cacaca;
-width: 235px;
+width: 415px;
 box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
