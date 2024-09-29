@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  .header {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+  }
+  
+  .header .logo {
+    font-size: 45px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .header .menu {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .header .menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header .menu a:hover {
+    color: #0cdf05;
+    transition: color 0.3s;
+  }
+  
+  .header .search-box {
+    position: relative;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    width: 235px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .header .search-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.25);
+  }
+  
+  .header .search-input {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #555;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    transition: background-color 0.3s ease, padding 0.3s;
+  }
+  
+  .header .search-input::placeholder {
+    color: #999;
+  }
+  
+  .header .search-input:focus {
+    background-color: #eaeaea;
+    padding-left: 5px;
+    border-radius: 8px;
+  }
+  
+  .header .search-icon {
+    color: #888;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .header .search-box:hover .search-icon {
+    color: #0cdf05;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .phone-finder {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .phone-finder h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .brand-list li {
+    padding: 10px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .phone-specs {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .header h1 {
+    font-size: 2em;
+  }
+  
+  .rating {
+    text-align: right;
+  }
+  
+  .phone-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .image img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .specs ul {
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  .specs ul li {
+    margin-bottom: 10px;
+  }
+  
+  .key-specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .spec-item {
+    background-color: #fff; 
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .spec-item h3 {
+    font-size: 1.8em; 
+    margin-bottom: 10px; 
+    color: #6A82FB; 
+  }
+  
+  .spec-item p {
+    font-size: 1em; 
+    color: #666; 
+    margin-bottom: 0; 
+  }
+  
+  
+  .phone-body-specs {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .phone-details {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .specs ul {
+        margin-left: 0;
+    }
+  
+    .key-specs {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  
+  
+  

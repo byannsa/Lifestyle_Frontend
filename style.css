@@ -156,7 +156,7 @@ color: #0cdf05;
 
 .home-img img{
   position: relative;
-  width: 35vw;
+  width: 15vw;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
@@ -255,7 +255,7 @@ color: #0cdf05;
 }
 
 .produk-info img {
-  width: 150px;
+  width: 130px;
   height: 150px;
 }
 
