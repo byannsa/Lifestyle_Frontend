@@ -15,7 +15,7 @@
         <a href="" class="logo">Gadgetan</a>
 
         <nav class="menu">
-          <div class="dropdown">
+          <!-- <div class="dropdown">
             <a class="dropdown-toggle" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Kategori
             </a>
@@ -24,29 +24,29 @@
               <li><a class="dropdown-item" href="#">Tablet</a></li>
               <li><a class="dropdown-item" href="#">Aksesoris</a></li>
             </ul>
-          </div>
+          </div> -->
 
           <div class="dropdown">
             <a class="dropdown-toggle" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Brand
             </a>
             <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
-              <li><a class="dropdown-item" href="/product/apple/iphone16_pro_max.html">Apple</a></li>
-              <li><a class="dropdown-item" href="#">Samsung</a></li>
+              <li><a class="dropdown-item" href="#apple">Apple</a></li>
+              <li><a class="dropdown-item" href="#samsung">Samsung</a></li>
               <li><a class="dropdown-item" href="#">Xioami</a></li>
               <li><a class="dropdown-item" href="#">Realme</a></li>
               <li><a class="dropdown-item" href="#">Asus</a></li>
             </ul>
           </div>
 
-          <a href="#">Artikel</a>
+          <a href="#">Contaact Us</a>
         </nav>
 
 
-        <div class="search-box">
-          <span class="search-icon material-symbols-outlined">search</span>
-          <input class="search-input" type="search" placeholder="Cari Barang Apa..">
-      </div>
+          <div class="search-box">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input id="search" class="search-input" type="search" placeholder="Cari Barang Apa.." onkeyup="search()">
+          </div>
     </div>
 
 
@@ -65,56 +65,125 @@
       </div>
 
       <div class="home-img">
-          <img src="img/iphone16_pro_max.png" alt="">
+          <img src="/img/samsung/s22ultra.png" alt="">
       </div>
   </section>
 
-  <section class="produk">
-    <div class="heading">Smartphone</xiphone16_pro_max.png
+  <section class="produk" id="apple">
+    <div class="heading">Apple</div>
       <div class="produk-more">
-        <a href="">Lihat Semua ></a>
+        <a href="/product/apple/apple.html">Lihat Semua ></a>
       </div>
 
     <div class="produk-container">
       <div class="produk-box">
         <div class="produk-info">
           <h4>Iphone 16 Pro Max</h4>
-          <img src="img/iphone16_pro_max.png" alt="">
+          <img src="/img/apple/ip16pm.png" alt="">
+          <a href="/product/apple/spec/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+        </div>
+      </div>
+
+      <div class="produk-box">
+        <div class="produk-info">
+          <h4>Iphone 15 Pro Max</h4>
+          <img src="/img/apple/ip15pm.jpg" alt="">
           <a href="/product/apple/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
         </div>
       </div>
 
       <div class="produk-box">
         <div class="produk-info">
-          <h4>Iphone 16 Pro Max</h4>
-          <img src="img/iphone16_pro_max.png" alt="">
+          <h4>Iphone 14 Pro Max</h4>
+          <img src="img/apple/ip14pm.jpg" alt="">
           <a href="/product/apple/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
         </div>
       </div>
 
       <div class="produk-box">
         <div class="produk-info">
-          <h4>Iphone 16 Pro Max</h4>
-          <img src="img/iphone16_pro_max.png" alt="">
+          <h4>Iphone 13 Pro Max</h4>
+          <img src="img/apple/ip13pm.jpeg" alt="">
           <a href="/product/apple/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
         </div>
       </div>
 
       <div class="produk-box">
         <div class="produk-info">
-          <h4>Iphone 16 Pro Max</h4>
-          <img src="img/iphone16_pro_max.png" alt="">
+          <h4>Iphone 12 Pro Max</h4>
+          <img src="img/apple/ip12pm.jpeg" alt="">
           <a href="/product/apple/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="produk"  id="samsung">
+    <div class="heading">Samsung</div>
+      <div class="produk-more">
+        <a href="product/apple/apple.html">Lihat Semua ></a>
+      </div>
+
+    <div class="produk-container">
+      <div class="produk-box">
+        <div class="produk-info-samsung">
+          <div class="produk-heading-samsung">
+            <h4>Samsung S24 Ultra</h4>
+          </div>
+          <img src="img/samsung/s24ultra.png" alt="">
+          <div class="produk-desc-samsung">
+            <a href="product/apple/spec/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+          </div>
         </div>
       </div>
 
       <div class="produk-box">
-        <div class="produk-info">
-          <h4>Iphone 16 Pro Max</h4>
-          <img src="img/iphone16_pro_max.png" alt="">
-          <a href="/product/apple/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+        <div class="produk-info-samsung">
+          <div class="produk-heading-samsung">
+            <h4>Samsung S23 Ultra</h4>
+          </div>
+          <img src="img/samsung/s23ultra.png" alt="">
+          <div class="produk-desc-samsung">
+            <a href="product/apple/spec/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+          </div>
         </div>
       </div>
+
+      <div class="produk-box">
+        <div class="produk-info-samsung">
+          <div class="produk-heading-samsung">
+            <h4>Samsung S22 Ultra</h4>
+          </div>
+          <img src="img/samsung/s22ultra.png" alt="">
+          <div class="produk-desc-samsung">
+            <a href="product/apple/spec/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produk-box">
+        <div class="produk-info-samsung">
+          <div class="produk-heading-samsung">
+            <h4>Samsung S23 Ultra</h4>
+          </div>
+          <img src="img/samsung/s22ultra.png" alt="">
+          <div class="produk-desc-samsung">
+            <a href="product/apple/spec/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="produk-box">
+        <div class="produk-info-samsung">
+          <div class="produk-heading-samsung">
+            <h4>Samsung S23 Ultra</h4>
+          </div>
+          <img src="img/samsung/s22ultra.png" alt="">
+          <div class="produk-desc-samsung">
+            <a href="product/apple/spec/iphone16_pro_max.html" class="btn">Lihat Deskripsi</a>
+          </div>
+        </div>
+      </div>  
     </div>
   </section>
 

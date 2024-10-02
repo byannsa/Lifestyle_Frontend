@@ -78,7 +78,7 @@ align-items: center;
 padding: 12px;
 border-radius: 30px;
 background: #cacaca;
-width: 415px;
+width: 230px;
 box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -156,14 +156,14 @@ color: #0cdf05;
 
 .home-img img{
   position: relative;
-  width: 15vw;
+  width: 35vw;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
-.home-img img:hover {
-  transform: scale(1.1);
-}
+  .home-img img:hover {
+    transform: scale(1.1);
+  }
 
 .home-content p {
   font-size: 1.6rem;
@@ -224,15 +224,15 @@ color: #0cdf05;
 
 .produk-container {
   display: flex;
-
   gap: 2rem;
   align-items: center;
 }
 
 .produk-box {
+  width: 200px;
   background-color: white;
-  height: 300px;
-  border-radius: 3rem;
+  height: 280px;
+  border-radius: 1rem;
   border: 5px solid transparent;
   cursor: pointer;
   transition: 0.4s ease-in-out;
@@ -249,7 +249,7 @@ color: #0cdf05;
 }
 
 .produk-info h4 {
-  font-size: 1rem;
+  font-size: 13px;
   font-weight: 800;
   line-height: 2;
 }
@@ -260,6 +260,47 @@ color: #0cdf05;
 }
 
 .produk-info .btn {
+  font-size: 13px;
+  margin-top: 1rem;
+  background: #717a71;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.produk-info-samsung {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-height: 200px;
+  justify-content: left;
+  padding: 1rem 2rem;
+}
+
+.produk-heading-samsung h4 {
+  position: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 2;
+}
+
+.produk-info-samsung img {
+  width: 250px;
+  height: 150px;
+}
+
+.produk-info-samsung {
+  bottom: 0;
+  width: 100%;
+}
+
+.produk-info-samsung .btn {
+  font-size: 13px;
+  margin-top: 1rem;
   background: #717a71;
   border-radius: 15px;
   color: white;
@@ -269,6 +310,8 @@ color: #0cdf05;
 
 
 .footer {
+  bottom: 0;
+  width: 100%;
   background: black;
 }
 
