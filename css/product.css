@@ -37,9 +37,8 @@ body {
 
 .header .menu {
   display: flex;
-  gap: 50px;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: end;
   margin: 0;
 }
 
@@ -56,79 +55,6 @@ body {
 .header .menu a:hover {
   color: #0cdf05;
   transition: color 0.3s;
-}
-
-.header .menu-2 {
-  display: flex;
-  gap: 50px;
-  flex-grow: 1;
-  margin: 0 -100px;
-}
-
-.header .menu-2 .dropdown-menu {
-  background: rgb(0, 0, 0);
-}
-
-.header .menu-2 a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.header .menu-2 a:hover {
-  color: #0cdf05;
-  transition: color 0.3s;
-}
-
-.search-box {
-  position: flex;
-  top: 16px;
-  right: 10px;
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  border-radius: 30px;
-  background: #cacaca;
-  width: 230px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.header .search-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.37);
-}
-
-.header .search-input {
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  color: #555;
-  margin-left: 10px;
-  outline: none;
-  border: none;
-  background: transparent;
-  width: 100%;
-  transition: background-color 0.3s ease, padding 0.3s;
-}
-
-.header .search-input::placeholder {
-  color: #999;
-}
-
-.header .search-input:focus {
-  background-color: #cacaca;
-  padding-left: 5px;
-  border-radius: 8px;
-}
-
-.header .search-icon {
-  color: #888;
-  font-size: 24px;
-  transition: color 0.3s ease;
-}
-
-.header .search-box:hover .search-icon {
-  color: #0cdf05;
 }
 
 .container {
@@ -155,6 +81,7 @@ body {
 }
 
 .tittle h1 {
+  margin-left: 1rem;
   font-size: 2em;
   color: white;
   padding: 10px;
@@ -284,6 +211,7 @@ h6 {
 }
 
 .prices-container p {
+  margin-bottom: 3px;
   font-size: 13px;
   font-family: sans-serif;
   color: black;
@@ -292,7 +220,7 @@ h6 {
 .prices-container .link-prices {
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 14px;
   font-size: 14px;
 }
 
@@ -302,20 +230,21 @@ h6 {
 
 .one-prices {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
   padding: 0 80px;
 }
 
 .one-prices:hover img {
-  width: 80px;
+  width: 65px;
   transition: 0.5s ease-out;
 }
 
 .one-prices img {
   padding: 10px;
   justify-content: center;
-  width: 75px;
+  width: 60px;
 }
 
 .review {

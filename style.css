@@ -18,7 +18,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 5rem 9% 5rem;
+  padding: 8rem 9% 5rem;
 }
 
 
@@ -226,7 +226,7 @@ color: #0cdf05;
 }
 
 .produk-box {
-  width: 200px;
+  width: 220px;
   background-color: white;
   height: 280px;
   border-radius: 1rem;
@@ -264,44 +264,6 @@ color: #0cdf05;
   font-weight: bold;
 }
 
-.produk-info-samsung {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-height: 200px;
-  justify-content: left;
-  padding: 1rem 2rem;
-}
-
-.produk-heading-samsung h4 {
-  position: flex;
-  justify-self: center;
-  align-items: center;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 800;
-  line-height: 2;
-}
-
-.produk-info-samsung img {
-  width: 250px;
-  height: 150px;
-}
-
-.produk-info-samsung {
-  bottom: 0;
-  width: 100%;
-}
-
-.produk-info-samsung .btn {
-  font-size: 13px;
-  margin-top: 1rem;
-  background: #717a71;
-  border-radius: 15px;
-  color: white;
-  font-weight: bold;
-}
 /* SECTION PRODUK */
 
 
