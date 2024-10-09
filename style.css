@@ -30,6 +30,7 @@ section {
   width: 100%;
   z-index: 5;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: space-between;
   background: black
@@ -247,7 +248,6 @@ color: #0cdf05;
 .produk-info h4 {
   font-size: 13px;
   font-weight: 800;
-  line-height: 2;
 }
 
 .produk-info img {
