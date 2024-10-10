@@ -1,27 +1,36 @@
 document.getElementById('search-input').addEventListener('input', function () {
-    // Ambil nilai input pencarian
     const query = this.value.toLowerCase();
 
-    // Ambil semua elemen produk
     const products = document.querySelectorAll('.produk-box');
+    const categories = document.querySelectorAll('.produk');
 
     let found = false;
 
-    products.forEach(product => {
-        // Ambil nama produk dari setiap produk
-        const productName = product.querySelector('h4').textContent.toLowerCase();
+    categories.forEach(category => {
+        let categoryFound = false;
+        const categoryProducts = category.querySelectorAll('.produk-box');
+        
+        categoryProducts.forEach(product => {
+            const productName = product.querySelector('h4').textContent.toLowerCase();
+            if (productName.includes(query)) {
+                product.style.display = "block";
+                found = true;
+                categoryFound = true;
+            } else {
+                product.style.display = "none";
+            }
+        });
 
-        // Cek apakah nama produk sesuai dengan query
-        if (productName.includes(query)) {
-            product.style.display = "block"; // Tampilkan produk jika cocok
-            found = true;
+        if (categoryFound) {
+            category.style.display = "block"; 
         } else {
-            product.style.display = "none"; // Sembunyikan produk jika tidak cocok
+            category.style.display = "none";
         }
     });
 
-    // Jika tidak ada produk yang ditemukan
     if (!found && query) {
-        console.log('Produk tidak ditemukan.');
+        notFoundMessage.style.display = "block";
+    } else {
+        notFoundMessage.style.display = "none";
     }
 });
