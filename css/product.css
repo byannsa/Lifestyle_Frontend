@@ -85,16 +85,19 @@ body {
 
 .tittle h1 {
   margin-left: 1rem;
-  font-size: 2em;
+  font-size: 2rem;
   color: white;
   padding: 10px;
 }
 
-.rating {
-  text-align: right;
-  padding: 10px;
+.tittle span {
+  margin-left: 1rem;
+  font-size: 1rem;
   color: white;
+  padding: 10px;
 }
+
+
 
 .phone-details {
   display: flex;
@@ -270,13 +273,43 @@ h6 {
   padding: 30px;
 }
 
+@media (max-width: 965px) {
+  .key-specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .phone-details {
+    padding: 1.5rem;
+  }
+
+  .tittle h1 {
+    font-size: 1.8rem;
+  }
+  
+}
+
 @media (max-width: 768px) {
+
+  .header .logo {
+    font-size: 2rem;
+  }
+
+  .tittle h1 {
+    font-size: 1.2rem;
+  }
+  
+  .tittle span {
+    font-size: 0.9rem;
+  }
+
   .phone-details {
     flex-direction: column;
     align-items: center;
   }
 
   .specs ul {
+    margin-top: 1.5rem;
     margin-left: 0;
   }
 
@@ -290,7 +323,62 @@ h6 {
     align-items: center;
   }
 
+  .review {
+    margin: 20px 0;
+  }
+
   .review-container{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .tittle h1 {
+    font-size: 0.9rem;
+  }
+
+  .tittle span {
+    font-size: 0.6rem;
+  }
+
+}
+
+@media (max-width: 498px) {
+.header .logo {
+    font-size: 1.4rem;
+  }
+
+  .tittle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tittle h1 {
+    font-size: 0.9rem;
+  }
+
+  .tittle span {
+    font-size: 0.5rem;
+  }
+}
+
+
+@media (max-width: 395px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .logo {
+    font-size: 1.2rem;
+  }
+
+  .header .logo {
+    font-size: 1.5rem;
   }
 }
